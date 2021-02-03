@@ -22,7 +22,7 @@ Unity遊戲製作時常用的Script
     - Run speed(float)
     - controller(CharacterController2D)
 
-**Cinemachine**
-A package uses to control 2D camera
-Install from: Window->Package Manager->Cinemachine
+**Cinemachine** 
+A package uses to control 2D camera 
+Install from: Window->Package Manager->Cinemachine 
 [Brackeys Cinemachine Tutorial](https://youtu.be/2jTY11Am0Ig)
