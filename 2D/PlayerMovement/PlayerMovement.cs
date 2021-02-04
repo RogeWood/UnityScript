@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-	public CharacterController2D controller;
+	public CharacterController2D controller; // use with CharacterController2D
 
 	public float runSpeed = 10f;
 	float horizontalMove = 0f;
@@ -14,14 +14,15 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
+		// Input
 		horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
-		
+
 		if(Input.GetButtonDown("Jump"))
 		{
 			jump = true;

@@ -2,6 +2,8 @@
 
 Unity遊戲製作時常用的Script
 
+## 2D
+
 **CharacterController2D**
 
 [From Brackeys](https://github.com/Brackeys/2D-Character-Contro)
@@ -17,12 +19,19 @@ Unity遊戲製作時常用的Script
 - function
     - .Move(float move, bool crouch, bool jump)
 
-**PlayerMovement2D**
+**PlayerMovement**
 - variable
     - Run speed(float)
     - controller(CharacterController2D)
 
 **Cinemachine**  
+
 A package uses to control 2D camera  
 Install from: Window->Package Manager->Cinemachine  
 [Brackeys Cinemachine Tutorial](https://youtu.be/2jTY11Am0Ig)
+
+## Top Down 2D
+
+**PlayerMovement**
+    - Move speed(float)
+    - Rigidbody2D(Rigidbody2D)
