@@ -1,9 +1,33 @@
 # UnityScript
 
 Unity遊戲製作時常用的Script
-
+[Toc]
 ## 2D
+### Attack
+**PlayerStepDownAttack**
+Instruction: Player jump into sky and than step on enemy
+- variable
+    - Jump force(float)
+    - Attack force(float)
+    - Rigidbody2D(Rigidbody2D)
+    - Ground check(transform)
+    - Ground Layer(LayerMask)
 
+https://imgur.com/a/Tw0fYbL
+
+enemy example:
+```csharp=
+private void Update()
+{
+    isDownAttack = GameObject.Find("player").GetComponent<PlayerStepDownAttack>().isDownAttack;
+
+    if (Physics2D.OverlapCircle(m_playerCheck.position, playerRadius, m_playerLayer) && isDownAttack)
+    {
+        this.gameObject.SetActive(false);
+    }
+}
+```
+### Brackeys tutorial
 **CharacterController2D**
 
 [From Brackeys](https://github.com/Brackeys/2D-Character-Contro)
