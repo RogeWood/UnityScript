@@ -13,7 +13,7 @@ Instruction: Player jump into sky and than step on enemy
     - Ground check(transform)
     - Ground Layer(LayerMask)
 
-![](https://imgur.com/a/Tw0fYbL)
+![](ExamplePhoto/PlayerStepDownAttack.gif)
 
 enemy example:
 ```csharp=

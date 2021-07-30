@@ -33,17 +33,17 @@ public class PlayerMovement : MonoBehaviour
 		{
             jump = true;
 		}
-        
+
         // Ground Check
         isGround = Physics2D.OverlapCircle(m_groundCheck.position, GroundedRadius, m_groundLayer);
-        
+
     }
 
 	private void FixedUpdate()
 	{
         // Movement
         m_Rigidbody2D.velocity = movement;
-        
+
         if (jump && isGround) //jump
 		{
             m_Rigidbody2D.AddForce(new Vector2(0, jumpForce));
