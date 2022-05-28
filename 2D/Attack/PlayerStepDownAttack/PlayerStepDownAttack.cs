@@ -30,9 +30,9 @@ public class PlayerMovement : MonoBehaviour
         // Input
         movement.y = m_Rigidbody2D.velocity.y;
         if (Input.GetButtonDown("Jump"))
-		{
+        {
             jump = true;
-		}
+        }
 
         // Ground Check
         isGround = Physics2D.OverlapCircle(m_groundCheck.position, GroundedRadius, m_groundLayer);
@@ -56,9 +56,9 @@ public class PlayerMovement : MonoBehaviour
             jump = false;
         }
         else if (isGround)
-		{
+        {
             isDownAttack = false;
-		}
+        }
 
     }
 
